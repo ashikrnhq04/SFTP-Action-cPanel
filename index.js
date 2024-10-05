@@ -4,7 +4,6 @@ const path = require('path');
 
 async function run() {
   const sftp = new SftpClient();
-
   try {
     // Get inputs
     const host = core.getInput('host');
@@ -31,5 +30,4 @@ async function run() {
     sftp.end();
   }
 }
-
 run();
