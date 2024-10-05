@@ -6,6 +6,9 @@ inputs:
   host:
     description: 'cPanel server hostname or IP'
     required: true
+  port:
+    description: Server port'
+    required: false  
   username:
     description: 'cPanel username'
     required: true
