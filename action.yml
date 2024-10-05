@@ -16,11 +16,11 @@ inputs:
     description: 'cPanel password'
     required: true
     secret: true
-  local_path:
+  source:
     description: 'The local folder to upload'
     required: true
     default: './'
-  remote_path:
+  target:
     description: 'The remote folder to upload to'
     required: true
     default: '/public_html'

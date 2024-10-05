@@ -10,8 +10,8 @@ async function run() {
     const port = core.getInput('port') || 22; 
     const username = core.getInput('username');
     const password = core.getInput('password');
-    const localPath = core.getInput('local_path');
-    const remotePath = core.getInput('remote_path');
+    const source = core.getInput('source');
+    const target = core.getInput('target');
 
 
     // Connect to the server
@@ -24,8 +24,8 @@ async function run() {
 
 
     // Upload the local folder to the remote folder
-    await sftp.uploadDir(localPath, remotePath);
-    core.info(`Files uploaded successfully from ${localPath} to ${remotePath}`);
+    await sftp.uploadDir(source, target);
+    core.info(`Files uploaded successfully from ${source} to ${target}`);
 
   } catch (err) {
     core.setFailed(`Action failed: ${err.message}`);
