@@ -1,0 +1,31 @@
+name: 'SFTP Deploy to cPanel'
+description: 'Deploy files to a cPanel server using SFTP'
+author: 'Jakir Hossain'
+
+inputs:
+  host:
+    description: 'cPanel server hostname or IP'
+    required: true
+  username:
+    description: 'cPanel username'
+    required: true
+  password:
+    description: 'cPanel password'
+    required: true
+    secret: true
+  local_path:
+    description: 'The local folder to upload'
+    required: true
+    default: './'
+  remote_path:
+    description: 'The remote folder to upload to'
+    required: true
+    default: '/public_html'
+
+runs:
+  using: 'node16'
+  main: 'index.js'
+
+branding:
+  icon: 'upload'
+  color: 'blue'
