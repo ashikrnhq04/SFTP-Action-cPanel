@@ -19,6 +19,7 @@ async function run() {
       password: password,
       port: 22, // Default SFTP port
     });
+    
 
     // Upload the local folder to the remote folder
     await sftp.uploadDir(localPath, remotePath);
