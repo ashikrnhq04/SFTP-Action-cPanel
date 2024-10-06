@@ -40,7 +40,7 @@ jobs:
 | username | yes      | cPane_username  | FTP Username                                                                                                                                         |
 | password | yes      | cPanel_Password | FTP Password                                                                                                                                         |
 | source   | no       | './'            | GitHub project directory. You can deploy a sub-directory from your repository                                                                        |
-|          | yes      | 'public_html/'  | Destination. Mainly public_html folder. If you are planning to deploy on a subdomain or subdirectory, include it here and add a slash(/) in the end. |
+| target   | yes      | 'public_html/'  | Destination. Mainly public_html folder. If you are planning to deploy on a subdomain or subdirectory, include it here and add a slash(/) in the end. |
 
 
 
