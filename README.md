@@ -1,9 +1,9 @@
 ## GitHub Action for cPanel
 
-Implement Continuas Integration to your GitHub Project and deploy to cPanel Hosting using SFTP.
-
+Implement continuous integration for your GitHub project and deploy it to cPanel Hosting using SFTP.
+<p align="center">
 <img  alt="GitHub-Action-cPanel"  src="images/github-to-cpanel.png" width="500">
-
+</p>
 ## Usage
 
 ```yml
@@ -39,8 +39,8 @@ jobs:
 | host | yes | example.com | Server IP or FTP URL.|
 | username|yes |cPane_username | FTP Username|
 |passowrd|yes|cPanel_Password| FTP Password|
-|source|no|`'./'`| GitHub project directory. You can diploy sub directory from your repository|
-|target|yes|`'public_html/'`| Destination. Mainly public_html folder. If you are plaing to deploy on subdomain or sub directory, include here and add a slash(/) in the end.|
+|source|no|`'./'`| GitHub project directory. You can deploy a sub-directory from your repository|
+|target|yes|`'public_html/'`| Destination. Mainly public_html folder. If you are planning to deploy on a subdomain or subdirectory, include it here and add a slash(/) in the end.|
 
 
 
@@ -50,7 +50,7 @@ jobs:
 
 Inside your project repository, create a workflow file to automate the deployment process. You’ll define it inside `.github/workflows/deploy.yml`.
 
-You can manually create the file inside .github/workflows directory. Or you can create one in your GitHub repository by visiting **Action > Simple workflow**. 
+You can manually create the file inside .github/workflows directory. You can also create one in your GitHub repository by visiting **Action > Simple workflow**. 
 
 #### 2. **Example Workflow Configuration (`deploy.yml`)**:
 
