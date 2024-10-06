@@ -18,7 +18,7 @@ inputs:
     secret: true
   source:
     description: 'The local folder to upload'
-    required: true
+    required: false
     default: './'
   target:
     description: 'The remote folder to upload to'

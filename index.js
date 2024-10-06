@@ -10,7 +10,7 @@ async function run() {
     const port = core.getInput('port') || 22; 
     const username = core.getInput('username');
     const password = core.getInput('password');
-    const source = core.getInput('source');
+    const source = core.getInput('source') || './';
     const target = core.getInput('target');
 
 
