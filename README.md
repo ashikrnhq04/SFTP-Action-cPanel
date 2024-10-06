@@ -34,13 +34,13 @@ jobs:
  
 
 ## Variables 
-| Config |Required| Example |Description|
-|--|--|--| --|--| --|
-| host | yes | example.com | Server IP or FTP URL.|
-| username|yes |cPane_username | FTP Username|
-|passowrd|yes|cPanel_Password| FTP Password|
-|source|no|`'./'`| GitHub project directory. You can deploy sub directory from your repository|
-|target|yes|`'public_html/'`| Destination. Mainly public_html folder. If you are planning to deploy on a subdomain or sub directory, include it here and add a slash(/) in the end.|
+| Config   | Required | Example         | Description                                                                                                                                          |
+|----------|----------|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| host     | yes      | example.com     | Server IP or FTP URL.                                                                                                                                |
+| username | yes      | cPane_username  | FTP Username                                                                                                                                         |
+| password | yes      | cPanel_Password | FTP Password                                                                                                                                         |
+| source   | no       | './'            | GitHub project directory. You can deploy a sub-directory from your repository                                                                        |
+|          | yes      | 'public_html/'  | Destination. Mainly public_html folder. If you are planning to deploy on a subdomain or subdirectory, include it here and add a slash(/) in the end. |
 
 
 
