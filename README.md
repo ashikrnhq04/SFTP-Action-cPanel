@@ -27,7 +27,6 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
-        source: './'  #  Project directory to deploy
         target: 'public_html/' # server directory
 
 ```
